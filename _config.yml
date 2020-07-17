@@ -10,13 +10,12 @@ menu:
   项目: /somepage/projects/index.html
   yznazo: /yznazo/index.html
 
-# 2:mathjax
-
+# 2:article settings
 #
-# Please add the following at the head of the article:
+# Please add the following at the head of the article if you need:
 #
 # ---
-# mathjax:true
+# mathjax: true/false #mathjax
 # ---
 #
 
@@ -29,3 +28,10 @@ avatar:
 #
 # Please edit '\source\css\style.styl'.
 #
+
+# 5:comments
+# LiveRe comments system
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+comments:
+  enable: true
+  livere_uid: MTAyMC80Njg5MS8yMzM5Mg==

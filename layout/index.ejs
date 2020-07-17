@@ -1,15 +1,31 @@
 <section class="posts opacity">
   <% page.posts.each(function (post) { %>
     <article class="post">
-      <div class="post-title">
+      <div class="post-title text-center">
         <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
       </div>
+      <hr>
       <div class="post-content">
+      <% if(post.excerpt){ %>
         <%- post.excerpt %>
+      <% }else{ %>
+        本文章无可提供的摘要qwq。
+      <% } %>
       </div>
-      <div class="post-meta">
-        <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+      <hr>
+
+      <div class="text-center">
+      <span class="post-meta" title="发布日期">
+        <span class="glyphicon glyphicon-time"></span>
+        <span class="post-time"><%- date(post.date, " YYYY") %></span>年<span class="post-time"><%- date(post.date, " MM") %></span>月<span class="post-time"><%- date(post.date, " DD") %></span>日
+      </span>
+      <span class="post-meta">|</span>
+      <span class="post-meta" title="更新日期">
+        <span class="glyphicon glyphicon-refresh"></span>
+        <span class="post-time"><%- date(post.updated, " YYYY") %></span>年<span class="post-time"><%- date(post.updated, " MM") %></span>月<span class="post-time"><%- date(post.updated, " DD") %></span>日
+      </span>
       </div>
+      
     </article>
   <% }) %>
 </section>
