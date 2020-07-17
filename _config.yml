@@ -1,0 +1,31 @@
+# 1:menu
+
+menu:
+  Archives: /archives/index.html
+  tags: /tags/index.html
+  categories: /categories/index.html
+  about: /somepage/about/index.html
+  留言: /somepage/talk/index.html
+  友链: /somepage/友链/index.html
+  项目: /somepage/projects/index.html
+  yznazo: /yznazo/index.html
+
+# 2:mathjax
+
+#
+# Please add the following at the head of the article:
+#
+# ---
+# mathjax:true
+# ---
+#
+
+# 3:avatar
+
+avatar:
+  url: /img/avatar.jpg
+
+# 4:background
+#
+# Please edit '\source\css\style.styl'.
+#

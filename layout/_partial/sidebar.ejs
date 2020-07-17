@@ -1,0 +1,18 @@
+<div class="sidebar sidebar-text opacity">
+    <img src="<%= theme.avatar.url %>" class="avatar">
+    <div class="text-center"><%= config.author %></div>
+	<h3>链接</h3>
+      <p><%= config.description %></p>
+      <ul class="nav nav-pills nav-stacked">
+        <% for (name in theme.menu) { %>
+          <% if (url_for(page.path) == url_for(theme.menu[name])) { %>
+            <li class="active">
+          <% } else { %>
+            <li>
+          <% } %>
+              <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%- __('Menu.' + name) %></a>
+            </li>
+        <% } %>
+      </ul>
+    <div class="text-center">By yz-hs.</div>
+</div>

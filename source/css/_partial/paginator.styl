@@ -1,0 +1,37 @@
+.page-nav {
+  padding: .5em 0;
+  margin-left: 10% !important;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .prev,
+  .next,
+  .page-number {
+    padding: .1em .5em;
+  }
+
+  .prev {
+    float: left;
+  }
+
+  .next {
+    float: right;
+  }
+
+  a {
+    color: #777;
+    text-decoration: none;
+
+    &:hover {
+      color: #368CCB;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .page-nav {
+        margin: 1em auto !important;
+    }
+}
