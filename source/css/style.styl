@@ -10,15 +10,24 @@ body {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
+    width: 64% !important;
+    margin: 0px !important;
+    margin-left: 18% !important;
+    margin-right: 18% !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 96% !important;
+        margin: 2% !important;
+    }
 }
 
 .margin-0{
     margin: 0px !important;
 }
 
-img,figure{
+img,figure,canvas{
 	max-height: 100%;
 	max-width: 100%;
 	overflow: auto;
@@ -56,3 +65,5 @@ hr {
 @import "_partial/footer";
 @import "_partial/menubar";
 @import "_partial/comments";
+@import "_partial/toolbar";
+@import "/useful";
