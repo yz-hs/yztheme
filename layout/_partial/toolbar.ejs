@@ -18,7 +18,28 @@
 	    })
 	</script>
   </div>
-  <div class="toolbar-card opacity" id="displaytime">
-  	<script type="text/javascript" src="js/displaytime.js"></script>
+  <div class="toolbar-card opacity">
+  	<div id="displaytime">
+  		<script type="text/javascript" src="/js/displaytime.js"></script>
+  	</div>
+  	<div class="text-center">
+  		<a id="demo" onclick="displaytimeprogress();dtpthen();">时间进度条</a>
+		<script>
+		function displaytimeprogress()
+		{
+			var myDate = new Date();
+			var hours=myDate.getHours();
+			var minutes=myDate.getMinutes();
+			minutes=hours*60+minutes;
+			var pro=minutes/14.4;
+			var innerhtml="<div data-toggle=\"tooltip\"  data-placement=\"bottom\" title=\"时间已过去了"+pro.toFixed(2)+"%\"><div class=\"progress\"><div class=\"progress-bar\" style=\"width: "+pro+"%;\"></div></div></div>"
+			document.getElementById("demo").innerHTML = innerhtml;
+		}
+		function dtpthen(){$(function () { $("[data-toggle='tooltip']").tooltip(); });}
+		</script>
+    </div>
+  </div>
+  <div class="toolbar-card opacity">
+  	  <button type="button" class="btn btn-primary" onclick="window.open('/atom.xml');" style="display:block;margin:0 auto">RSS地址</button>
   </div>
 </div>

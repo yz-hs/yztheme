@@ -15,7 +15,7 @@ menu:
 # Please add the following at the head of the article if you need:
 #
 # ---
-# mathjax: true/false #mathjax
+# 
 # ---
 #
 
@@ -35,3 +35,8 @@ avatar:
 comments:
   enable: true
   livere_uid: MTAyMC80Njg5MS8yMzM5Mg==
+
+# END:note
+
+# (1) Mathjax is turned on globally.
+# (2) "RSS地址" requires `hexo-generator-feed` plugin to use. Please run `npm install hexo-generator-feed`.
