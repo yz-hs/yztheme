@@ -23,7 +23,7 @@
   		<script type="text/javascript" src="/js/displaytime.js"></script>
   	</div>
   	<div class="text-center">
-  		<a id="demo" onclick="displaytimeprogress();dtpthen();">时间进度条</a>
+  		<a id="timeprogress" onclick="displaytimeprogress();dtpthen();">时间进度条</a>
 		<script>
 		function displaytimeprogress()
 		{
@@ -33,13 +33,24 @@
 			minutes=hours*60+minutes;
 			var pro=minutes/14.4;
 			var innerhtml="<div data-toggle=\"tooltip\"  data-placement=\"bottom\" title=\"时间已过去了"+pro.toFixed(2)+"%\"><div class=\"progress\"><div class=\"progress-bar\" style=\"width: "+pro+"%;\"></div></div></div>"
-			document.getElementById("demo").innerHTML = innerhtml;
+			document.getElementById("timeprogress").innerHTML = innerhtml;
 		}
 		function dtpthen(){$(function () { $("[data-toggle='tooltip']").tooltip(); });}
 		</script>
     </div>
   </div>
   <div class="toolbar-card opacity">
-  	  <button type="button" class="btn btn-primary" onclick="window.open('/atom.xml');" style="display:block;margin:0 auto">RSS地址</button>
+  	  <div class="text-center"><h3>RSS订阅</h3></div>
+  	  <button type="button" class="btn btn-primary" onclick="window.open('/atom.xml');" style="display:block;margin:0 auto">文章RSS地址</button>
+  	  <hr>
+  	  <div class="text-center">RSS方式阅读会在这个信息爆炸的时代为你提高阅读质量。</div>
+  </div>
+  <div class="toolbar-card opacity">
+    <div class="text-center"><h3>文章目录</h3></div>
+    <% if(is_post()||is_page()){ %>
+  	  <%- toc(page.content,{list_number: false}) %>
+  	<% }else{ %>
+  	  <div class="text-center">本页面非文章页面qwq。</div>
+  	<% } %>
   </div>
 </div>
