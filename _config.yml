@@ -15,7 +15,7 @@ menu:
 # Please add the following at the head of the article if you need:
 #
 # ---
-# 
+# discomments: true  #There is only "true". Used to disable comments in this article or page.
 # ---
 #
 
@@ -33,7 +33,7 @@ avatar:
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 comments:
-  enable: true
+  enable: true # Comments will be opened on pages other than those containing "discomments: true".
   livere_uid: MTAyMC80Njg5MS8yMzM5Mg==
 
 # END:note

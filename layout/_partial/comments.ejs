@@ -1,4 +1,6 @@
-<% if(theme.comments.enable) { %>
+<% if(page.discomments){ %>
+    <div class="text-center">本页面并未开启评论功能。</div>
+<% }else if(theme.comments.enable) { %>
     <script type="text/javascript">
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];
