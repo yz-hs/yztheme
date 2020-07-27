@@ -25,9 +25,10 @@ avatar:
   url: /img/avatar.jpg
 
 # 4:background
-#
-# Please edit '\source\css\style.styl'.
-#
+
+background:
+  color: ffeef8 #
+  img-url: /img/bgp.jpg
 
 # 5:comments
 # LiveRe comments system
@@ -36,7 +37,11 @@ comments:
   enable: true # Comments will be opened on pages other than those containing "discomments: true".
   livere_uid: MTAyMC80Njg5MS8yMzM5Mg==
 
+# 6:responsive page
+responsive:
+  dividing: 875 #If the screen width is less than this value, the page layout will change to suit different screens.The unit is px.
+
 # END:note
 
 # (1) Mathjax is turned on globally.
-# (2) "RSS地址" requires `hexo-generator-feed` plugin to use. Please run `npm install hexo-generator-feed`.
+# (2) "RSS地址" requires `hexo-generator-feed` plugin to use. Please run `npm install hexo-generator-feed`. 

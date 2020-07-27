@@ -1,63 +1,6 @@
-body {
-  background-color: rgb(255,238,248) !important;
-  background-image: url('/img/bgp.jpg') !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
-  background-position:50% 50% !important;
-  background-size: cover !important;
-  font-size: 1.25rem !important;
-  font-family: "Monda",sans-serif !important;
-  line-height: 1.5 !important;
-}
-
-.container {
-  width: 60% !important;
-  margin: 0px !important;
-  margin-left: 20% !important;
-  margin-right: 20% !important;
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-    width: 96% !important;
-    margin: 2% !important;
-  }
-}
-
-.margin-0{
-  margin: 0px !important;
-}
-
-img,figure,canvas,iframe{
-	max-height: 100%;
-	max-width: 100%;
-	overflow: auto;
-}
-
-.opacity{
-	opacity:0.9 !important;
-}
-
-.sticky-it {
-  position: sticky !important;
-}
-
-.card {
-  margin: 1em auto;
-  padding: 30px 50px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #fff;
-}
-
-.big-text {
-  font-size:1.5em;
-}
-
-hr {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-}
-
+@import "_var/base";
+@import "_others/useful";
+@import "_others/global";
 @import "_partial/header";
 @import "_partial/post";
 @import "_partial/archive";
@@ -67,4 +10,3 @@ hr {
 @import "_partial/menubar";
 @import "_partial/comments";
 @import "_partial/toolbar";
-@import "/useful";
